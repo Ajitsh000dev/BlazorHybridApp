@@ -1,0 +1,40 @@
+﻿@page "/"
+
+@using SharedUI.Notifications;
+
+
+
+
+<PageTitle>Index</PageTitle>
+
+<h1>Blazor Hybrid App</h1>
+
+@*<div class="row">
+    <div class="col-md">
+        <div class="form-group">
+            <label>Supported By Browser?</label>
+            <div class="alert @(isSupportedByBrowser ? "alert-success" : "alert-warning")" role="alert">
+                @(isSupportedByBrowser ? "Notifications are supported!" : "Notifications are not supported by this browser")
+            </div>
+        </div>
+    </div>
+    <div class="col-md">
+        <div class="form-group">
+            <label>User has permission?</label>
+            <div class="alert @(NotificationService.PermissionStatus == PermissionType.Granted ? "alert-success" : NotificationService.PermissionStatus == PermissionType.Default ? "alert-secondary" :"alert-warning")" role="alert">
+                The user's permission is: @NotificationService.PermissionStatus.ToString()
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+
+@code
+{
+   
+
+}

@@ -1,0 +1,101 @@
+﻿@page "/login"
+
+<div class="d-flex flex-column flex-root">
+    <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-image: url(&quot;/assets/metronic/assets/media/svg/illustrations/login.png&quot;);">
+        <div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
+            <a href="" class="d-flex justify-content-center mb-12">
+                <img alt="logo" class="h-40px ng-star-inserted" src="http://localhost:4200/assets/common/images/app-logo-on-light.svg">
+                <!--bindings={
+                  "ng-reflect-ng-if": "true"
+                }-->
+                <!--bindings={}-->
+            </a>
+            <!--bindings={
+              "ng-reflect-ng-if": "false"
+            }-->
+            <div class="w-lg-500px bg-body rounded shadow-sm p-10 p-lg-15 mx-auto ng-star-inserted">
+                <div class="tenant-change-box mb-5 ng-star-inserted">
+                    <tenant-change>
+                        <span class="ng-star-inserted">
+                            Current tenant: <!--bindings={}--><span class="ng-star-inserted">Not selected</span>
+                            <!--bindings={
+                              "ng-reflect-ng-if": "true"
+                            }-->
+                            ( <a href="javascript:;">Change</a> ) <tenantchangemodal>
+                                <div appbsmodal="" tabindex="-1" role="dialog" aria-labelledby="tenantChangeModal" aria-hidden="true" class="modal fade" ng-reflect-config="[object Object]">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!--bindings={
+                                              "ng-reflect-ng-if": "false"
+                                            }-->
+                                        </div>
+                                    </div>
+                                </div><!--container-->
+                            </tenantchangemodal>
+                        </span>
+                        <!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }-->
+                    </tenant-change>
+                </div>
+                <!--bindings={
+                  "ng-reflect-ng-if": "true"
+                }-->
+                <router-outlet></router-outlet><ng-component _nghost-ctn-c342="" class="ng-tns-c342-1 ng-star-inserted">
+                    <div _ngcontent-ctn-c342="" class="login-form ng-tns-c342-1 ng-trigger ng-trigger-routerTransition" style="margin-top: 0px; opacity: 1;">
+                        <div _ngcontent-ctn-c342="" class="pb-13 pt-lg-0 pt-5 ng-tns-c342-1"><h3 _ngcontent-ctn-c342="" class="fw-bolder text-dark fs-h4 fs-h1-lg ng-tns-c342-1">Log in</h3></div><form _ngcontent-ctn-c342="" novalidate="" method="post" class="login-form form ng-tns-c342-1 ng-dirty ng-valid ng-touched">
+                            <div _ngcontent-ctn-c342="" class="mb-5 ng-tns-c342-1">
+                                <input _ngcontent-ctn-c342="" autofocus="" type="text" autocomplete="new-password" name="userNameOrEmailAddress" required="" class="form-control form-control-solid h-auto py-7 px-6 rounded-lg fs-h6 ng-tns-c342-1 ng-dirty ng-valid ng-touched" ng-reflect-required="" ng-reflect-name="userNameOrEmailAddress" placeholder="User name or email *" ng-reflect-model="admin">
+                                <!--bindings={
+                                  "ng-reflect-ng-if": "false"
+                                }-->
+                            </div><div _ngcontent-ctn-c342="" class="mb-5 ng-tns-c342-1">
+                                <input _ngcontent-ctn-c342="" type="password" autocomplete="new-password" name="password" required="" maxlength="32" class="form-control form-control-solid h-auto py-7 px-6 rounded-lg fs-h6 ng-tns-c342-1 ng-dirty ng-valid ng-touched" ng-reflect-required="" ng-reflect-name="password" ng-reflect-maxlength="32" placeholder="Password *" ng-reflect-model="123qwe">
+                                <!--bindings={
+                                  "ng-reflect-ng-if": "false"
+                                }-->
+                            </div><div _ngcontent-ctn-c342="" class="mb-5 d-flex justify-content-between mt-4 ng-tns-c342-1"><label _ngcontent-ctn-c342="" class="form-check form-check-custom form-check-solid ng-tns-c342-1"><input _ngcontent-ctn-c342="" type="checkbox" name="rememberMe" value="true" class="form-check-input ng-tns-c342-1 ng-untouched ng-pristine ng-valid" ng-reflect-name="rememberMe" ng-reflect-model="false"><span _ngcontent-ctn-c342="" class="form-check-label ng-tns-c342-1"> Remember me </span></label><a _ngcontent-ctn-c342="" routerlink="/account/forgot-password" id="forget-password" class="text-primary fs-h6 fw-bolder text-hover-primary ng-tns-c342-1" ng-reflect-router-link="/account/forgot-password" href="/account/forgot-password">Forgot password?</a></div><div _ngcontent-ctn-c342="" class="pb-lg-0 pb-5 ng-tns-c342-1"><button _ngcontent-ctn-c342="" type="submit" class="btn w-100 btn-primary fw-bolder fs-h6 px-8 py-4 my-3 me-3 ng-tns-c342-1">Log in</button></div>
+                        </form>
+                        <!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }-->
+                        <!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }-->
+                    </div><div _ngcontent-ctn-c342="" class="mt-5 ng-tns-c342-1">
+                        <div _ngcontent-ctn-c342="" class="ng-tns-c342-1"><span _ngcontent-ctn-c342="" class="ng-tns-c342-1">Not a member yet ?</span></div>
+                        <!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }-->
+                        <span _ngcontent-ctn-c342="" class="ng-tns-c342-1 ng-star-inserted"><a _ngcontent-ctn-c342="" routerlink="/account/select-edition" class="ng-tns-c342-1" ng-reflect-router-link="/account/select-edition" href="/account/select-edition">New tenant</a><span _ngcontent-ctn-c342="" class="pipe-divider ng-tns-c342-1"> | </span></span>
+                        <!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }-->
+                        <a _ngcontent-ctn-c342="" routerlink="/account/email-activation" id="email-activation-btn" class="ng-tns-c342-1" ng-reflect-router-link="/account/email-activation" href="/account/email-activation">Email activation</a>
+                    </div>
+                </ng-component><!--container-->
+            </div>
+            <!--bindings={
+              "ng-reflect-ng-if": "true"
+            }-->
+        </div><div class="d-flex flex-center flex-column-auto p-10">
+            <div class="d-flex align-items-center fw-bold fs-6">
+                <language-switch class="mx-auto" _nghost-ctn-c336="">
+                    <div _ngcontent-ctn-c336="" class="ms-1 mx-auto ng-star-inserted">
+                        <div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="Deutsch"><i _ngcontent-ctn-c336="" class="de famfamfam-flags" aria-label="Deutsch"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="Dutch (Nederlands)"><i _ngcontent-ctn-c336="" class="famfamfam-flags nl" aria-label="Dutch (Nederlands)"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="English"><i _ngcontent-ctn-c336="" class="famfamfam-flags us" aria-label="English"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="English (UK)"><i _ngcontent-ctn-c336="" class="famfamfam-flags gb" aria-label="English (UK)"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="Español (México)"><i _ngcontent-ctn-c336="" class="famfamfam-flags mx" aria-label="Español (México)"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="Español (Spanish)"><i _ngcontent-ctn-c336="" class="es famfamfam-flags" aria-label="Español (Spanish)"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="Français"><i _ngcontent-ctn-c336="" class="famfamfam-flags fr" aria-label="Français"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="Italiano"><i _ngcontent-ctn-c336="" class="famfamfam-flags it" aria-label="Italiano"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="Português (Brasil)"><i _ngcontent-ctn-c336="" class="br famfamfam-flags" aria-label="Português (Brasil)"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="Pусский"><i _ngcontent-ctn-c336="" class="famfamfam-flags ru" aria-label="Pусский"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="Tiếng Việt"><i _ngcontent-ctn-c336="" class="famfamfam-flags vn" aria-label="Tiếng Việt"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="Türkçe"><i _ngcontent-ctn-c336="" class="famfamfam-flags tr" aria-label="Türkçe"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="العربية"><i _ngcontent-ctn-c336="" class="famfamfam-flags sa" aria-label="العربية"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="ภาษาไทย"><i _ngcontent-ctn-c336="" class="famfamfam-flags th" aria-label="ภาษาไทย"></i></div><div _ngcontent-ctn-c336="" class="btn language-switch-btn btn-clean btn-icon p-0 me-1 ng-star-inserted" title="简体中文"><i _ngcontent-ctn-c336="" class="cn famfamfam-flags" aria-label="简体中文"></i></div>
+                        <!--bindings={
+                          "ng-reflect-ng-for-of": "[object Object],[object Object"
+                        }-->
+                    </div>
+                    <!--bindings={
+                      "ng-reflect-ng-if": "true"
+                    }-->
+                </language-switch>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}
